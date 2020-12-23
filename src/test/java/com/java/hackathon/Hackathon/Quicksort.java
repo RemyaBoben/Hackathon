@@ -6,8 +6,20 @@ public class Quicksort {
 
 	 public static void main(String[] args) {
 	        int[] arr = {4, 5, 1, 2, 3, 3};
+			int n=arr.length;
+			
+			System.out.println("Given Array");
+			for(int i=0;i<=n-1;i++){
+				System.out.print(arr[i]+" ");
+				
+			}
 	        quickSort(arr, 0, arr.length-1);
-	        System.out.println(Arrays.toString(arr));
+	        
+	        System.out.println("\nSoretd Array");
+			for(int i=0;i<=n-1;i++){
+				System.out.print(arr[i]+" ");
+				
+			}
 	    }
 	 
 	    public static void quickSort(int[] arr, int start, int end){
